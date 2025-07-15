@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Ishwari",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^7.0.5",
+    "twilio": "^5.7.3"
+  }
+}
