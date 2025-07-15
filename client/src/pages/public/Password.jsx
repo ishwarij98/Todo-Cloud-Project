@@ -12,7 +12,7 @@ const Password = () => {
     setMsg("");
 
     try {
-      const res = await axios.post("http://localhost:5003/api/forgetpassword", { email });
+      const res = await axios.post(`${apiUrl}/api/public/forgetpassword/`, { email });
       setMsg(res.data.msg || "Password reset link or new password sent to your email.");
     } catch (error) {
       console.error("Error:", error.response?.data || error.message);

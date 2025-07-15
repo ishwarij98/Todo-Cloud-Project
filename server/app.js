@@ -33,12 +33,12 @@ if(fs.existsSync(buildPath)) {
 
 
 
-const PORT = process.env.PORT || 5008;
+const PORT = process.env.PORT || 8012;
 
 const app = express();
 app.use(morgan("dev"));
 
-const allowedDomains = ["http://localhost:8011"];
+const allowedDomains = ["https://todo.ishwari.online"];
 
 const domainOptions = {
   origin: function (origin, callback) {
