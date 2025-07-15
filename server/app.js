@@ -7,6 +7,8 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from 'url';
 
+const app = express();
+
 const _filename = fileURLToPath(import.meta.url);
 const _dirname = path.dirname(_filename);
 
@@ -35,7 +37,7 @@ if(fs.existsSync(buildPath)) {
 
 const PORT = process.env.PORT || 8012;
 
-const app = express();
+
 app.use(morgan("dev"));
 
 const allowedDomains = ["https://todo.ishwari.online"];
