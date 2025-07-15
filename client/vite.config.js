@@ -8,6 +8,6 @@ export default defineConfig({
   server: {
     port: 8011,
     host: true,
-    allowedHosts: ["http://localhost:5008"]
+    allowedHosts: ["https://todo.ishwari.online/"]
   }
 })
