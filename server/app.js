@@ -24,7 +24,7 @@ import rateLimit from "express-rate-limit";
 
 import "./utils/dbConnect.js";
 
-const buildPath = path.join(_dirname, "build");
+const buildPath = path.join(_dirname, "dist");
 
 // checks if buildPath exits
 if(fs.existsSync(buildPath)) {
